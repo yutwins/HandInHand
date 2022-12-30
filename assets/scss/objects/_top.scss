@@ -1,0 +1,251 @@
+@use "../foundation/global" as *;
+
+.top {
+    background-color: $theme04_color;
+
+    &-inner {
+        color: #fff;
+        width: 1100px;
+        max-width: 95%;
+
+        @include mq("sp") {
+            max-width: 90%;
+        }
+    }
+
+    &-nav {
+
+    }
+
+    &-navItems {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+
+        @include mq("sp") {
+            display: block;
+        }
+    }
+
+    &-nav__item {
+        display: block;
+        width: 30.9%;
+        height: auto;
+        padding-bottom: 40px;
+        cursor: pointer;
+        position: relative;
+
+
+        @include mq("sp") {
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+            padding-bottom: 33px;
+
+            &:not(:first-child) {
+                margin-top: 32px;
+            }
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 32px;
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            background: url(../images/top-nav-itemLines.png) no-repeat center center / contain;
+
+            @include mq("sp") {
+                height: 25px;
+            }
+        }
+    }
+    &-nav_itemImg {
+       width: 100%;
+       height: 220px;
+       object-fit: cover;
+
+    }
+    &-nav__itemText {
+        margin-top: 8px;
+        font-size: 24px;
+        font-weight: bold;
+        white-space: nowrap;
+        text-align: center;
+
+        @include mq("tab") {
+            font-size: 18px;
+        }
+        @include mq("sp") {
+            font-size: 16px;
+        }
+    }
+
+    &-message {
+        text-align: center;
+        padding-top: 120px;
+
+        @include mq("tab") {
+            padding-top: 96px;
+        }
+        @include mq("sp") {
+            padding-top: 72px;
+        }
+
+        &__head {
+            font-size: 32px;
+            font-weight: bold;
+
+            @include mq("tab") {
+                font-size: 24px;
+            }
+            @include mq("sp") {
+                font-size: 20px;
+            }
+        }
+
+        &__text {
+            margin-top: 32px;
+            font-size: 18px;
+            line-height: 40px;
+            font-weight: 500;
+
+            @include mq("tab") {
+                font-size: 18px;
+                line-height: 32px;
+            }
+            @include mq("sp") {
+                font-size: 14px;
+                line-height: 26px;
+            }
+        }
+    }
+
+
+    &-sliderArea {
+        margin-top: 32px;
+    }
+
+    &-slider {
+        width: 800px;
+        max-width: 90%;
+        // height: 533px;
+        height: auto;
+        margin: 0 auto;
+
+        @include mq("tab") {
+            width: 600px;
+        }
+        @include mq("sp") {
+            width: 300px;
+        }
+        
+        .slick-imgArea {
+            width: 100%;
+            height: 100%;
+            
+            .slick__img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        button.slick-prev,
+        button.slick-next {
+            cursor: pointer;
+            
+            &::before {
+                content: "";
+                width: 20px;
+                height: 37px;
+                position: absolute;
+                top: 0;
+
+                @include mq("tab") {
+                    width: 12px;
+                    height: 19px;
+                }
+                @include mq("sp") {
+                    width: 7px;
+                    height: 13px;
+                }
+            }
+        }
+        button.slick-prev {
+
+            &::before {
+                background: url(../images/left-arrow.png) no-repeat center center / contain;
+                left: -45px;
+
+                @include mq("tab") {
+                    left: -30px;
+                }
+                @include mq("sp") {
+                    left: 0;
+                }
+            }
+        }
+        button.slick-next {
+            
+            &::before {
+                background: url(../images/right-arrow.png) no-repeat center center / contain;
+                right: -45px;
+
+                @include mq("tab") {
+                    right: -30px;
+                }
+                @include mq("sp") {
+                    right: 0;
+                }
+            }
+        }
+    }
+
+    &-thumbnail {
+        margin-top: 32px;
+
+        @include mq("sp") {
+            margin-top: 10px;
+        }
+
+        .slick-track {
+            transform: unset !important;
+        }
+
+    }
+    &-thumbnailImgArea {
+        width: 20% !important;
+
+        @include mq() {
+            
+        }
+
+
+        &.slick-current {
+            position: relative;
+            border: 1px solid #fff;
+
+            &::before {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: rgba(#000, .75);
+            }
+        }
+        
+        .top-thumbnail__img {
+            
+        }
+    }
+    // .top-thumbnailImgArea.slick-active.slick-current {
+    //     opacity: .7;
+    // }
+}

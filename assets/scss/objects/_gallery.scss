@@ -1,0 +1,151 @@
+@use "../foundation/global" as *;
+
+
+.gallery {
+    background-color: $theme04_color;
+    padding-top: 75px;
+    padding-bottom: 100px;
+
+    &-inner {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    &-titleArea {
+        color: #fff;
+    }
+    
+    &__title--en {
+        color: rgba(#fff, .5) !important;
+    }
+
+
+    &-slider {
+
+    }
+
+    &-sliderArea {
+        margin-top: 32px;
+        // display: flex;
+
+        .gallery-thumbnail {
+            // flex-direction: column;
+        }
+    }
+
+    &-slider {
+        width: 750px;
+        // height: 533px;
+        height: auto;
+        margin: 0 auto;
+
+        @include mq("tab") {
+            width: 600px;
+        }
+        @include mq("sp") {
+            width: 300px;
+        }
+        
+        .gallery-slick-imgArea {
+            width: 100%;
+            height: 100%;
+        }
+        .gallery-slick__img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        button.slick-prev,
+        button.slick-next {
+            cursor: pointer;
+            
+            &::before {
+                content: "";
+                width: 20px;
+                height: 37px;
+                position: absolute;
+                top: 0;
+
+                @include mq("tab") {
+                    width: 12px;
+                    height: 19px;
+                }
+                @include mq("sp") {
+                    width: 7px;
+                    height: 13px;
+                }
+            }
+        }
+        button.slick-prev {
+
+            &::before {
+                background: url(../images/left-arrow.png) no-repeat center center / contain;
+                left: -45px;
+
+                @include mq("tab") {
+                    left: -30px;
+                }
+                @include mq("sp") {
+                    left: 0;
+                }
+            }
+        }
+        button.slick-next {
+            
+            &::before {
+                background: url(../images/right-arrow.png) no-repeat center center / contain;
+                right: -45px;
+
+                @include mq("tab") {
+                    right: -30px;
+                }
+                @include mq("sp") {
+                    right: 0;
+                }
+            }
+        }
+    }
+
+    &-thumbnail {
+
+        @include mq("sp") {
+            
+        }
+
+        .slick-track {
+            transform: unset !important;
+        }
+
+    }
+    &-thumbnailImgArea {
+        width: 250px !important;
+        
+
+        @include mq() {
+            
+        }
+
+
+        &.slick-current {
+            position: relative;
+            border: 1px solid #fff;
+
+            &::before {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: rgba(#000, .75);
+            }
+        }
+        
+        .top-thumbnail__img {
+            width: 100%;
+
+        }
+    }
+}

@@ -1,0 +1,92 @@
+@use "../foundation/global" as *;
+
+.staff {
+    
+    &-inner {
+        width: 990px;
+        max-width: 90%;
+        padding-bottom: 75px;
+        margin: 0 auto;
+
+        @include mq("sp") {
+            max-width: calc(100% - 40px);
+            padding-bottom: 32px;
+        }
+    }
+
+    &__subtitle {
+        margin-top: 32px;
+        color: $gray_color04;
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+
+        @include mq("tab") {
+            font-size: 16px;
+        }
+        @include mq("sp") {
+            font-size: 14px;
+        }
+    }
+
+    &-members {
+        margin-top: 64px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px 7.57%;
+
+        @include mq("tab") {
+            margin-top: 48px;
+        }
+        @include mq("sp") {
+            margin-top: 32px;
+            display: block;
+        }
+    }
+    
+    &__member {
+        width: 28.2%;
+        height: auto;
+
+        @include mq("sp") {
+            width: 100%;
+            max-width: 280px;
+            margin: 0 auto;
+
+            &:not(:first-child) {
+                margin-top: 32px;
+            }
+        }
+    }
+
+    &__img {
+        width: 100%;
+        height: auto;
+    }
+
+    &__name {
+        margin-top: 22px;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Noto Sans JP', sans-serif;
+        text-align: center;
+
+        @include mq("sp") {
+            margin-top: 10px;
+        }
+    }
+    
+    &__position {
+        margin-top: 12px;
+        font-size: 18px;
+        font-weight: 500px;
+        font-family: 'Poppins', sans-serif;
+        color: $gray_color04;
+        text-align: center;
+
+        @include mq("sp") {
+            margin-top: 8px;
+        }
+
+    }
+}

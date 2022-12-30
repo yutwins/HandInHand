@@ -1,0 +1,171 @@
+@use "../foundation/global" as *;
+
+
+.feature {
+    padding-top: 120px;
+
+    &-inner {
+    }
+    
+    &-titleArea {
+        
+    }
+    
+    &-items {
+        margin-top: 40px;
+    }
+    
+    
+    &__item {
+        
+        .feature-itemInner {
+            width: 91.7%;
+            margin: 0 auto; 
+            display: flex !important;
+            justify-content: space-between;
+            align-items: center;
+            gap: 5%;
+    
+            @include mq("sp") {
+                display: block;
+                width: 100%;
+                max-width: 91.7%;
+                margin: 0 auto;
+            }
+        }
+     
+        &--left {
+            margin-left: 60px;
+            width: 34%;
+            width: 500px;
+
+            @include mq("tab") {
+                margin-left: 32px;
+            }
+            @include mq("sp") {
+                margin-left: 0;
+                width: 100%;
+            }
+        }
+
+        &--right {
+            width: 57%;
+            height: 500px;
+
+            @include mq("tab") {
+                height: 420px;
+            }
+            @include mq("sp") {
+                height: auto;
+            }
+        }
+    }
+    &__item02 {
+        margin-top: 80px;
+
+        @include mq("sp") {
+            margin-top: 32px;
+        }
+
+        .feature-itemInner {
+            flex-direction: row-reverse;
+        }
+
+
+        &--left {
+            width: 500px;
+            margin-left: 0;
+            margin-right: 60px;
+
+            @include mq("tab") {
+                margin-right: 32px;
+            }
+            @include mq("sp") {
+                margin-right: 0;
+            }
+        }        
+    }
+    &__item03 {
+        width: 100%;
+        background-color: $theme04_color;
+        margin-top: 80px;
+        padding: 65px 0;
+
+        @include mq("sp") {
+            padding: 30px 0;
+        }
+
+        &--left {
+            color: #fff;
+
+            .feature__itemLine {
+                background-color: #fff;
+            }
+
+            .feature__itemText {
+                margin-top: 30px;
+            }
+        }
+    }
+
+    &__itemHead {
+        font-size: 28px;
+        font-weight: bold;
+
+        @include mq("tab") {
+            font-size: 22px;
+        }
+        @include mq("sp") {
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+
+    &__itemLine {
+        width: 70px;
+        height: 1px;
+        background-color: #000;
+        margin: 40px 0;
+
+        @include mq("tab") {
+            margin: 24px 0;
+        }
+    }
+
+    &__itemSpImg {
+
+        @include mq("sp") {
+            margin-top: 12px;
+        }
+    }
+
+    &__itemText {
+        font-family: 'Noto Sans JP', sans-serif;
+
+        @include mq("sp") {
+            margin-top: 12px;
+            text-align: center;
+        }
+    }
+
+    .feature02__btn--text {
+        color: $theme03_color;
+    }
+    .feature03__btn--text {
+        color: #fff;
+
+        &::after {
+            border-color: #fff;
+        }
+    }
+
+    &__itemImg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        @include mq("sp") {
+            height: auto;
+        }
+    }
+}

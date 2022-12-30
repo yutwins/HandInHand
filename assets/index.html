@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ①基本的metaタグ -->
+    <!-- 文字コードの指定 -->
+    <meta charset="utf-8">
+    <!-- IEで常に標準モードで表示させる -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- viewport(レスポンシブ対応) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 電話番号の自動リンク化を無効 -->
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- ②SEO対策の補助的措置 -->
+    <!-- サイトのタイトル -->
+    <title>ハンドインハンド</title>
+    <!-- キーワード -->
+    <meta name="keywords" content="">
+    <!-- サイトの説明 -->
+    <meta name="description" content="">
+    <!-- 重複するURLを一本化 -->
+    <link rel="canonical" href="">
+
+    <!-- ③SNS対策 -->
+    <meta property="og:site_name" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="urlが入ります">
+    <meta property="fb:app_id" content="AppID">
+    <meta property="og:image" content="">
+    <meta name="twitter:card" content="Summary Card">
+    <meta name="twitter:site" content="">
+
+    <!-- ④その他の指定 -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <!-- faviconの指定 -->
+    <link rel="shortcut icon" href="./favicon.ico">
+
+    <!-- google fontsの読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- shippori mincho -->
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- noto sans jp -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- 外部のCSSファイル -->
+    <link href="css/slick.css" rel="stylesheet">
+    <link href="css/slick-theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="mainVisual">
+        <img class="mainVisual__bg sp-only" src="./images/MV-img-sp.png" alt="画像">
+        <div class="mainVisual-container">
+            <div class="mainVisual-headArea">
+                <h2 class="mainVisual__head">岡山後楽園挙式は30年以上の信頼と実績</h2><br>
+                <h2 class="mainVisual__head">3,000組以上のカップルに</h2><br>
+                <h2 class="mainVisual__head">選ばれ続けている</h2><br>
+                <h2 class="mainVisual__head">安心のブライダル会社で</h2>
+            </div>
+            <div class="mainVisual-textArea">
+                <p class="mainVisual__text">日本三名園のひとつ、岡山後楽園で<br>一生思い出に残る特別な挙式を。</p>
+            </div>
+            <ul class="mainVisual-ul">
+                <li class="mainVisual__list">30年以上の信頼</li>
+                <li class="mainVisual__list">ワンランク上の和装</li>
+                <li class="mainVisual__list">3,000組以上の実績</li>
+            </ul>
+        </div>
+        <nav class="mainVisual-nav">
+            <a href="#feature" class="mainVisual-nav__item"><span class="mainVisual-nav__text">feature</span></a>
+            <a href="#gallery" class="mainVisual-nav__item"><span class="mainVisual-nav__text">gallery</span></a>
+            <a href="#staff" class="mainVisual-nav__item"><span class="mainVisual-nav__text">staff</span></a>
+            <a href="#flow" class="mainVisual-nav__item"><span class="mainVisual-nav__text">flow</span></a>
+            <a href="#contact" class="mainVisual-nav__item"><span class="mainVisual-nav__text">contact</span></a>
+        </nav>
+    </section>
+    <!-- /.section mainVisual -->
+
+    <a href="#" class="fixed__btn"><span class="fixed__btn--text">お問い合せ</span></a>
+
+    <!-- ctaボタンエリア -->
+    <div class="cta">
+        <div class="cta-inner">
+            <p class="cta__head">実際に話を聞いてみませんか？</p>
+            <ul class="cta-btns">
+                <li class="cta-btnList">
+                    <a href="#" class="cta__btn form__btn"><span class="cta__btn--text">フォームでお問い合せ</span></a>
+                </li>
+                <li class="cta-btnList">
+                    <a href="#" class="cta__btn line__btn"><span class="cta__btn--text">LINEでお問い合わせ</span></a>
+                </li>
+                <li class="cta-btnList">
+                    <a href="#" class="cta__btn store__btn"><span class="cta__btn--text">来店予約</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- ctaボタンエリアここまで -->
+
+    <section class="section top">
+        <div class="inner top-inner">
+            <nav class="top-nav">
+                <div class="top-navItems">
+                    <a href="#" class="top-nav__item">
+                        <img src="./images/top-nav-item01.png" alt="" class="top-nav__itemImg">
+                        <p class="top-nav__itemText">岡山で第一号の<br>ウェディングプロデュース会社</p>
+                    </a>
+                    <a href="#" class="top-nav__item">
+                        <img src="./images/top-nav-item02.png" alt="" class="top-nav__itemImg">
+                        <p class="top-nav__itemText">特別にセレクトされた<br>ワンランク上の和装が人気</p>
+                    </a>
+                    <a href="#" class="top-nav__item">
+                        <img src="./images/top-nav-item03.png" alt="" class="top-nav__itemImg">
+                        <p class="top-nav__itemText">経験豊富なスタッフによる<br>圧倒的安心感</p>
+                    </a>
+                </div>
+            </nav>
+            <div class="top-message">
+                <h2 class="top-message__head">岡山後楽園で挙式をさせていただき<br>おかげさまで30年</h2>
+                <p class="top-message__text">
+                    日本三名園として300年の歴史のある<br class="sp-only">素晴らしい庭園で<br>
+                    私たちが初めて岡山後楽園の挙式を<br class="sp-only">プロデュースをし始め30年以上経ちます。<br>
+                    <br>
+                    岡山後楽園には専門式場や<br class="sp-only">ホテルのような設備はなく、<br>
+                    ウエディングプランナーがいません。<br>
+                    ですので、岡山後楽園で<br class="sp-only">素敵な一日を叶えるためには<br>
+                    準備から当日に至るまでのご案内、<br class="sp-only">当日の会場設営、<br class="pc-only">
+                    新郎新婦やゲストの<br class="sp-only">スムーズなご案内など行うための導線設計など、<br>
+                    プロフェッショナルとしての知見や<br class="sp-only">経験が非常に重要となります。<br>
+                    <br>
+                    これまで岡山後楽園挙式を<br class="sp-only">3000組以上の実績ある私たちと一緒に<br>
+                    ご家族、ご親族、ご友人、<br>
+                    そしてかけがえのない大切な人たちとの結びつきを<br>
+                    充分に感じることのできる一日を創りませんか。<br>
+                </p>
+            </div>
+            <div class="top-sliderArea">
+                <div class="top-slider">
+                    <div class="slick-imgArea">
+                        <img class="slick__img" src="./images/top-slider01.png" alt="スライダー画像" />
+                    </div>
+                    <div class="slick-imgArea">
+                        <img class="slick__img" src="./images/top-slider02.png" alt="スライダー画像" />
+                    </div>
+                    <div class="slick-imgArea">
+                        <img class="slick__img" src="./images/top-slider03.png" alt="スライダー画像" />
+                    </div>
+                    <div class="slick-imgArea">
+                        <img class="slick__img" src="./images/top-slider04.png" alt="スライダー画像" />
+                    </div>
+                    <div class="slick-imgArea">
+                        <img class="slick__img" src="./images/top-slider05.png" alt="スライダー画像" />
+                    </div>
+                </div>
+                <div class="top-thumbnail">
+                    <div class="top-thumbnailImgArea">
+                        <img class="top-thumbnail__img" src="./images/top-slider01.png" alt="サムネイル画像" />
+                    </div>
+                    <div class="top-thumbnailImgArea">
+                        <img class="top-thumbnail__img" src="./images/top-slider02.png" alt="サムネイル画像" />
+                    </div>
+                    <div class="top-thumbnailImgArea">
+                        <img class="top-thumbnail__img" src="./images/top-slider03.png" alt="サムネイル画像" />
+                    </div>
+                    <div class="top-thumbnailImgArea">
+                        <img class="top-thumbnail__img" src="./images/top-slider04.png" alt="サムネイル画像" />
+                    </div>
+                    <div class="top-thumbnailImgArea">
+                        <img class="top-thumbnail__img" src="./images/top-slider05.png" alt="サムネイル画像" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.section top -->
+
+    <section class="section gallery">
+        <div class="inner gallery-inner">
+            <!-- セクションタイトルエリア -->
+            <div class="section-titleArea gallery-titleArea">
+                <h2 class="section__title gallery__title">ギャラリー</h2>
+                <p class="section__title--en gallery__title--en">Gallery</p>
+            </div>
+            <!-- セクションタイトルエリアここまで -->
+            <div class="gallery-sliderArea">
+                <div class="gallery-slider">
+                    <div class="gallery-slickImgArea">
+                        <img class="gallery-slick__img" src="./images/gallery01.png" alt="スライダー画像" />
+                    </div>
+                    <div class="gallery-slickImgArea">
+                        <img class="gallery-slick__img" src="./images/gallery02.png" alt="スライダー画像" />
+                    </div>
+                    <div class="gallery-slickImgArea">
+                        <img class="gallery-slick__img" src="./images/gallery03.png" alt="スライダー画像" />
+                    </div>
+                    <div class="gallery-slickImgArea">
+                        <img class="gallery-slick__img" src="./images/gallery04.png" alt="スライダー画像" />
+                    </div>
+                    <div class="gallery-slickImgArea">
+                        <img class="gallery-slick__img" src="./images/gallery05.png" alt="スライダー画像" />
+                    </div>
+                </div>
+                <!-- <div class="gallery-thumbnail">
+                    <div class="gallery-thumbnailImgArea">
+                        <img class="gallery-thumbnail__img" src="./images/top-slider01.png" alt="サムネイル画像" />
+                    </div>
+                    <div class="gallery-thumbnailImgArea">
+                        <img class="gallery-thumbnail__img" src="./images/top-slider02.png" alt="サムネイル画像" />
+                    </div>
+                    <div class="gallery-thumbnailImgArea">
+                        <img class="gallery-thumbnail__img" src="./images/top-slider03.png" alt="サムネイル画像" />
+                    </div>
+                </div> -->
+            </div>
+            <div class="gallery-thumbnail">
+                <div class="galery-thumbnailImgArea">
+                    <img class="galery-thumbnail__img" src="./images/gallery01.png" alt="サムネイル画像" />
+                </div>
+                <div class="galery-thumbnailImgArea">
+                    <img class="galery-thumbnail__img" src="./images/gallery02.png" alt="サムネイル画像" />
+                </div>
+                <div class="galery-thumbnailImgArea">
+                    <img class="galery-thumbnail__img" src="./images/gallery03.png" alt="サムネイル画像" />
+                </div>
+                <div class="galery-thumbnailImgArea">
+                    <img class="galery-thumbnail__img" src="./images/gallery04.png" alt="サムネイル画像" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.section gallery -->
+
+    <!-- ctaボタンエリア -->
+    <div class="cta">
+        <div class="cta-inner">
+            <p class="cta__head">実際に話を聞いてみませんか？</p>
+            <ul class="cta-btns">
+                <li class="cta-btnList">
+                    <a href="#" class="cta__btn form__btn"><span class="cta__btn--text">フォームでお問い合せ</span></a>
+                </li>
+                <li class="cta-btnList">
+                    <a href="#" class="cta__btn line__btn"><span class="cta__btn--text">LINEでお問い合わせ</span></a>
+                </li>
+                <li class="cta-btnList">
+                    <a href="#" class="cta__btn store__btn"><span class="cta__btn--text">来店予約</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- ctaボタンエリアここまで -->
+
+    <section class="section feature">
+        <div class="feature-inner">
+            <!-- セクションタイトルエリア -->
+            <div class="section-titleArea">
+                <h2 class="section__title feature__title">特徴</h2>
+                <p class="section__title--en feature__title--en">feature</p>
+            </div>
+            <!-- セクションタイトルエリアここまで -->
+            <div class="feature-items">
+                <div class="feature__item feature__item01">
+                    <div class="feature-itemInner">
+                        <div class="feature__item--left">
+                            <h2 class="feature__itemHead feature__item01Head">岡山で第一号の<br>ウェディングプロデュース会社</h2>
+                            <div class="feature__itemLine pc-only"></div>
+                            <img src="./images/feature-item01.png" alt="画像" class="feature__itemSpImg sp-only">
+                            <p class="feature__itemText">
+                                1993年（平成5年）に設立した弊社は、<br class="pc-only">
+                                30年以上続く岡山初のウェディングプロデュース会社です。<br class="pc-only">
+                                <br class="pc-only">
+                                これまで、岡山後楽園で3,000組以上のカップルのスタートを見守ってきました。岡山後楽園で初の挙式を執り行わせていただき、今なお選ばれ続けています。<br
+                                    class="pc-only">
+                                <br class="pc-only">
+                                大人数から少人数、ご家族のみや、お写真のみの結婚式もお任せください。
+                            </p>
+                        </div>
+                        <div class="feature__item--right pc-only">
+                            <img class="feature__itemImg" src="./images/feature-item01.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="feature__item feature__item02">
+                    <div class="feature-itemInner">
+                        <div class="feature__item--left feature__item02--left">
+                            <h2 class="feature__itemHead feature__item02Head">新郎新婦のためにセレクトされた<br>ワンランク上の和装が人気</h2>
+                            <div class="feature__itemLine pc-only"></div>
+                            <img src="./images/feature-item02.png" alt="画像" class="feature__itemSpImg sp-only">
+                            <p class="feature__itemText">
+                                和婚の「正礼装」は、白無垢だけでなく、色打掛もございます。<br class="pc-only">
+                                華やかな婚礼衣裳に身をつつんだ花嫁姿は、岡山後楽園での四季折々の美しい景観の中でいっそう映えます。<br class="pc-only">
+                                <br class="pc-only">
+                                ハンドインハンドが、新郎新婦のためにセレクトした和装は <br class="pc-only">
+                                新郎新婦だけでなくゲストにも人気の逸品を取り揃えております。<br class="pc-only">
+                                <br class="pc-only">
+                                着物選びも担当アドバイザーが丁寧にアドバイスさせていただきますので<br class="pc-only">
+                                安心してハンドインハンドの和装をお楽しみください。
+                            </p>
+                            <a href="#" class="common__btn">
+                                <span class="common__btn--text feature02__btn--text">全ての事例をみてみる</span>
+                                <img class="common__btnArrow" src="./images/right-arrow(red).png" alt="">
+                            </a>
+                        </div>
+                        <div class="feature__item--right pc-only">
+                            <img class="feature__itemImg" src="./images/feature-item02.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="feature__item feature__item03">
+                    <div class="feature-itemInner">
+                        <div class="feature__item--left feature__item03--left">
+                            <h2 class="feature__itemHead feature__item02Head">経験豊富なスタッフによる<br>圧倒的安心感</h2>
+                            <!-- <div class="feature__itemLine pc-only"></div> -->
+                            <img src="./images/feature-item03.png" alt="画像" class="feature__itemSpImg sp-only">
+                            <p class="feature__itemText">
+                                結婚という人生に一度の機会に関わる上で最も大切なことは、<br class="pc-only">
+                                お客様と私たちスタッフとの信頼関係です。<br class="pc-only">
+                                <br class="pc-only">
+                                お客様の信頼をいち早く構築することにより、<br class="pc-only">
+                                当日をより想い出深い一日にすることができます。<br class="pc-only">
+                                <br class="pc-only">
+                                ハンドインハンドのスタッフが、30年間、<br class="pc-only">
+                                3,000組以上のカップルから培った経験を生かし、<br class="pc-only">
+                                すべてのお客様に合わせた柔軟な提案をさせていただきます。
+                            </p>
+                            <a href="#" class="common__btn">
+                                <span class="common__btn--text feature03__btn--text">全ての事例をみてみる</span>
+                                <img class="common__btnArrow" src="./images/right-arrow(white).png" alt="">
+                            </a>
+                        </div>
+                        <div class="feature__item--right pc-only">
+                            <img class="feature__itemImg" src="./images/feature-item03.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.section feature -->
+
+    <!-- ctaボタンエリア -->
+    <div class="cta">
+        <div class="cta-inner">
+            <p class="cta__head">実際に話を聞いてみませんか？</p>
+            <ul class="cta-btns">
+                <li class="cta-btnList">
+                    <a href="#" class="cta__btn form__btn"><span class="cta__btn--text">フォームでお問い合せ</span></a>
+                </li>
+                <li class="cta-btnList">
+                    <a href="#" class="cta__btn line__btn"><span class="cta__btn--text">LINEでお問い合わせ</span></a>
+                </li>
+                <li class="cta-btnList">
+                    <a href="#" class="cta__btn store__btn"><span class="cta__btn--text">来店予約</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- ctaボタンエリアここまで -->
+
+    <section class="section voice">
+        <div class="inner voice-inner">
+            <!-- セクションタイトルエリア -->
+            <div class="section-titleArea">
+                <h2 class="section__title voice__title">お客様の声</h2>
+                <p class="section__title--en voice__title--en">voice</p>
+            </div>
+            <!-- セクションタイトルエリアここまで -->
+            <div class="voice-items">
+                <a href="#" class="voice__item voice__item01">
+                    <img src="./images/voice-item01.png" alt="画像" class="voice__itemImg">
+                    <p class="voice__itemName">J & M</p>
+                    <div class="voice__itemPlaces">
+                        <dl class="voice__itemDl">
+                            <dt class="voice__itemDt">結婚式</dd>
+                            <dd class="voice__itemDd">岡山後楽園&nbsp;栄唱の間</dd>
+                        </dl>
+                        <dl class="voice__itemDl">
+                            <dt class="voice__itemDt">披露宴</dd>
+                            <dd class="voice__itemDd">荒手茶寮</dd>
+                        </dl>
+                    </div>
+                    <p class="voice__itemText">
+                        私たちは親族のみの結婚式にしました。<br>
+                        家族であっても、普段あまり会えない方々が結婚式に列席して下さいました。家族の結びつきをより一層強く感じることができましたし、かけがえのない思い出となりました。改めて、スタッフの皆様、この度は本当にありがとうございました。
+                    </p>
+                </a>
+                <a href="#" class="voice__item voice__item02">
+                    <img src="./images/voice-item02.png" alt="画像" class="voice__itemImg">
+                    <p class="voice__itemName">T & S</p>
+                    <div class="voice__itemPlaces">
+                        <dl class="voice__itemDl">
+                            <dt class="voice__itemDt">結婚式</dd>
+                            <dd class="voice__itemDd">荒手茶寮</dd>
+                        </dl>
+                        <dl class="voice__itemDl">
+                            <dt class="voice__itemDt">披露宴</dd>
+                            <dd class="voice__itemDd">荒手茶寮</dd>
+                        </dl>
+                    </div>
+                    <p class="voice__itemText">
+                        ハンドインハンド様は過去より多くの結婚式を手がけておられ、私共のようなケースは幾度も経験済み。電話やメールで息子達に細やで的確なアドバイスを下さったおかげで、準備はスムーズに進行。結果的に本人達がお店で打合せしたのは、約2か月前の衣装合わせ、そして前日の最終確認の2回でした。
+                    </p>
+                </a>
+                <a href="#" class="voice__item voice__item03">
+                    <img src="./images/voice-item03.png" alt="画像" class="voice__itemImg">
+                    <p class="voice__itemName">M & M</p>
+                    <div class="voice__itemPlaces">
+                        <dl class="voice__itemDl">
+                            <dt class="voice__itemDt">結婚式</dd>
+                            <dd class="voice__itemDd">岡山後楽園&nbsp;栄唱の間</dd>
+                        </dl>
+                        <dl class="voice__itemDl">
+                            <dt class="voice__itemDt">披露宴</dd>
+                            <dd class="voice__itemDd">荒手茶寮</dd>
+                        </dl>
+                    </div>
+                    <p class="voice__itemText">
+                        いくつか他の結婚式場も検討しており見学も行っていましたが、どれもしっくりこなかったところ、ハンドインハンドさんで紹介いただいた後楽園での挙式の様子が思いのほか素敵で、ご対応いただいた濱田さんのお人柄もあり、その場でハンドインハンドさんに決めました。
+                    </p>
+                </a>
+                <a href="#" class="voice__item voice__item04">
+                    <img src="./images/voice-item04.png" alt="画像" class="voice__itemImg">
+                    <p class="voice__itemName">K & Y</p>
+                    <div class="voice__itemPlaces">
+                        <dl class="voice__itemDl">
+                            <dt class="voice__itemDt">結婚式</dd>
+                            <dd class="voice__itemDd">岡山後楽園&nbsp;鶴鳴館</dd>
+                        </dl>
+                        <dl class="voice__itemDl">
+                            <dt class="voice__itemDt">披露宴</dd>
+                            <dd class="voice__itemDd">荒手茶寮</dd>
+                        </dl>
+                    </div>
+                    <p class="voice__itemText">
+                        分からないことだらけの私たちでしたが、スタッフの皆さんが温かく支えてくださり、当日も安心して式を迎えることができました。雨の心配もありましたが、最後の最後まで臨機応変に対応してくださったおかげで、無事に結婚式を行うことができ、大変満足しています。
+                    </p>
+                </a>
+            </div>
+            <!-- ボタンエリア -->
+            <a href="#" class="common__btn voice__btn">
+                <span class="common__btn--text voice__btn--text">全ての事例をみてみる</span>
+                <img class="common__btnArrow" src="./images/right-arrow(red).png" alt="">
+            </a>
+            <!-- ボタンエリアここまで -->
+        </div>
+    </section>
+    <!-- /.section voice -->
+
+    <section class="section staff">
+        <div class="inner staff-inner">
+            <!-- セクションタイトルエリア -->
+            <div class="section-titleArea">
+                <h2 class="section__title staff__title">スタッフ</h2>
+                <p class="section__title--en staff__title--en">staff</p>
+            </div>
+            <!-- セクションタイトルエリアここまで -->
+            <p class="staff__subtitle">わたしたちは結婚式を通じて「人のために生きる」事を学び、<br
+                    class="pc-only">スタッフ同士が切磋琢磨し、助け合い、自身の人間性を向上させ、「品性」を高める努力をします。</p>
+            <div class="staff-members">
+                <div class="staff__member staff__member01">
+                    <img src="./images/staff01.png" alt="築地 祥文" class="staff__img">
+                    <p class="staff__name">築地 祥文</p>
+                    <p class="staff__position">
+                        CEO / 代表取締役 / <br>
+                        CreativeDirector /Producer
+                    </p>
+                </div>
+                <div class="staff__member staff__member02">
+                    <img src="./images/staff02.png" alt="濱田 加那子" class="staff__img">
+                    <p class="staff__name">濱田 加那子</p>
+                    <p class="staff__position">
+                        COO 取締役 / GM PRODUCER /<br>
+                        KIMONO Coordinator
+                    </p>
+                </div>
+                <div class="staff__member staff__member03">
+                    <img src="./images/staff03.png" alt="千房 信江" class="staff__img">
+                    <p class="staff__name">千房 信江</p>
+                    <p class="staff__position">
+                        ADMINISTRATOR / <br>
+                        ASSISTANT PRODUCER
+                    </p>
+                </div>
+                <div class="staff__member staff__member04">
+                    <img src="./images/staff04.png" alt="杉原 夢" class="staff__img">
+                    <p class="staff__name">杉原 夢</p>
+                    <p class="staff__position">
+                        PRODUCER
+                    </p>
+                </div>
+                <div class="staff__member staff__member05">
+                    <img src="./images/staff05.png" alt="原 紀々香" class="staff__img">
+                    <p class="staff__name">原 紀々香</p>
+                    <p class="staff__position">
+                        PRODUCER
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.section staff -->
+
+    <!-- ctaボタンエリア -->
+    <div class="cta">
+        <div class="cta-inner">
+            <p class="cta__head">実際に話を聞いてみませんか？</p>
+            <ul class="cta-btns">
+                <li class="cta-btnList">
+                    <a href="#" class="cta__btn form__btn"><span class="cta__btn--text">フォームでお問い合せ</span></a>
+                </li>
+                <li class="cta-btnList">
+                    <a href="#" class="cta__btn line__btn"><span class="cta__btn--text">LINEでお問い合わせ</span></a>
+                </li>
+                <li class="cta-btnList">
+                    <a href="#" class="cta__btn store__btn"><span class="cta__btn--text">来店予約</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- ctaボタンエリアここまで -->
+
+    <section class="section flow">
+        <div class="inner flow-inner">
+            <!-- セクションタイトルエリア -->
+            <div class="section-titleArea">
+                <h2 class="section__title flow__title">サービスの流れ</h2>
+                <p class="section__title--en flow__title--en">flow</p>
+            </div>
+            <!-- セクションタイトルエリアここまで -->
+            <div class="flow-cards">
+                <div class="flow__card flow__card01">
+                    <div class="flow__cardContainer">
+                        <div class="flow__cardHead">
+                            <p class="flow__cardHead--num">01.</p>
+                            <p class="flow__cardHead--text">お問い合せ・<br>来店のご予約</p>
+                        </div>
+                        <p class="flow__text">ウエディングに関するご相談・お問い合わせなどお気軽にお問い合わせください。ハンドインハンドスタッフが責任をもってお答えいたします。ご来店のご予約も承っておリます。</p>
+                    </div>
+                </div>
+                <div class="flow__card flow__card02">
+                    <div class="flow__cardContainer">
+                        <div class="flow__cardHead">
+                            <p class="flow__cardHead--num">02.</p>
+                            <p class="flow__cardHead--text">ご来店</p>
+                        </div>
+                        <p class="flow__text">「まず何から始めたらいいのかもわからない」という方も大歓迎しております。お客様のご希望をお伺いさせていただき、今後の大まかな流れなどを一緒に確認しましょう。</p>
+                    </div>
+                </div>
+                <div class="flow__card flow__card03">
+                    <div class="flow__cardContainer">
+                        <div class="flow__cardHead">
+                            <p class="flow__cardHead--num">03.</p>
+                            <p class="flow__cardHead--text">日程相談・<br>会場選び</p>
+                        </div>
+                        <p class="flow__text">式の日程を決定いたします。また、後楽園にあるさまざまな施設の中から、（実際に見学をおこなっていただき、）結婚式と挙式後の披露宴会場・お食事会場としてお客様ご希望の会場をご提案させていただきます。</p>
+                    </div>
+                </div>
+                <div class="flow__card flow__card04">
+                    <div class="flow__cardContainer">
+                        <div class="flow__cardHead">
+                            <p class="flow__cardHead--num">04.</p>
+                            <p class="flow__cardHead--text">衣装選び</p>
+                        </div>
+                        <p class="flow__text">和婚の「正礼装」は、白無垢だけでなく、色打掛や引き振袖も選べます。ハンドインハンドや衣装のプロが、招待ゲストの構成なども考慮に入れたうえでアドバイスしますので、着物選びも安心して楽しめます。</p>
+                    </div>
+                </div>
+                <div class="flow__card flow__card05">
+                    <div class="flow__cardContainer">
+                        <div class="flow__cardHead">
+                            <p class="flow__cardHead--num">05.</p>
+                            <p class="flow__cardHead--text">お打ち合わせ</p>
+                        </div>
+                        <p class="flow__text">いよいよ具体的な打ち合わせを行います。料理や引出物など、ゲストに喜んでもらえるえる詳細の内容を決めていきます。
+                        </p>
+                    </div>
+                </div>
+                <div class="flow__card flow__card06">
+                    <div class="flow__cardContainer">
+                        <div class="flow__cardHead">
+                            <p class="flow__cardHead--num">06.</p>
+                            <p class="flow__cardHead--text">挙式当日</p>
+                        </div>
+                        <p class="flow__text">当日は幸せいっぱいの1日に。ゲストのご案内も含めて、安心してハンドインハンドにお任せください。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.section flow -->
+
+    <section class="section access">
+        <div class="inner access-inner">
+            <!-- セクションタイトルエリア -->
+            <div class="section-titleArea">
+                <h2 class="section__title access__title">アクセス</h2>
+                <p class="section__title--en access__title--en">access</p>
+            </div>
+            <!-- セクションタイトルエリアここまで -->
+            <dl class="access-dl">
+                <div class="access-row">
+                    <dt class="access__dt">本店所在地</dt>
+                    <div class="access-ddArea">
+                        <dd class="access__dd">岡山市北区国体町4-40</dd>
+                    </div>
+                </div>
+                <div class="access-row">
+                    <dt class="access__dt">連絡先</dt>
+                    <div class="access-ddArea">
+                        <dd class="access__dd">TEL：086-256-3117</dd>
+                        <dd class="access__dd">FAX：086-251-1806</dd>
+                        <dd class="access__dd">e-mail：info@hand-in-hand.co</dd>
+                    </div>
+                </div>
+                <div class="access-row">
+                    <dt class="access__dt">営業時間</dt>
+                    <div class="access-ddArea">
+                        <dd class="access__dd">11:00 〜 19:00</dd>
+                    </div>
+                </div>
+                <div class="access-row">
+                    <dt class="access__dt">定休日</dt>
+                    <div class="access-ddArea">
+                        <dd class="access__dd">火曜日／水曜日</dd>
+                    </div>
+                </div>
+            </dl>
+            <div class="access-container">
+                <div class="access-containerLeft">
+                    <div class="access__map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.2296077329943!2d133.9179328155357!3d34.674154092146495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355406469934e5b9%3A0x2168be0bc5019729!2z44CSNzAwLTAwMjEg5bKh5bGx55yM5bKh5bGx5biC5YyX5Yy65Zu95L2T55S677yU4oiS77yU77yQ!5e0!3m2!1sja!2sjp!4v1672132735014!5m2!1sja!2sjp"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="access-imageArea">
+                        <img src="./images/access-image01.png" alt="店舗画像" class="access__img--small">
+                        <img src="./images/access-image02.png" alt="店舗画像" class="access__img--small">
+                    </div>
+                </div>
+                <div class="access-containerRight">
+                    <img src="./images/access-image03.png" alt="店舗画像" class="access__img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.section access -->
+
+    <section class="section contact">
+        <div class="inner contact-inner">
+            <!-- セクションタイトルエリア -->
+            <div class="section-titleArea">
+                <h2 class="section__title contact__title">お問い合せ</h2>
+                <p class="section__title--en contact__title--en">contact</p>
+            </div>
+            <!-- セクションタイトルエリアここまで -->
+            <form action="" class="contact-form">
+                <dl class="contact-form__dl">
+                    <div class="contact-form__row">
+                        <dt class="contact-form__label"><label for="your-name">お名前<span
+                                    class="require-label">*</span></label></dt>
+                        <dd class="contact-form__input">
+                            <input id="your-name" type="text" placeholder="山田 太郎" name="your-name">
+                        </dd>
+                    </div>
+                    <div class="contact-form__row">
+                        <dt class="contact-form__label"><label for="your-furigana">ふりがな<span
+                                    class="require-label">*</span></label></dt>
+                        <dd class="contact-form__input">
+                            <input id="your-furigana" type="text" placeholder="ヤマダ タロウ" name="your-furigana">
+                        </dd>
+                    </div>
+                    <!-- <div class="contact-form__row">
+                        <dt class="contact-form__label"><label for="your-number">ご出身<span
+                                    class="require-label">*</span></label></dt>
+                        <div class="contact-form__address">
+                            <div class="contact-form__addressContainer">
+                                <dd class="contact-form__input">
+                                    <input id="in-Okayama" type="radio" value="in-Okayama" name="your-address" checked>
+                                    <label for="in-Okayama">岡山県内</label>
+                                </dd>
+                                <dd class="contact-form__input">
+                                    <input id="out-Okayama" type="radio" value="out-Okayama" name="your-address">
+                                    <label for="out-Okayama">岡山県外</label>
+                                </dd>
+                            </div>
+                            <p class="contact-form__note">
+                                ※県外の方は住所までご記入をお願いいたします。<br>
+                                マンション、アパートの名称と号室までご記入ください。
+                            </p>
+                            <dd class="contact-form__inputAddress">
+                                <input id="your-address" type="text" placeholder="都道府県" name="your-address">
+                            </dd>
+                        </div>
+                    </div> -->
+                    <div class="contact-form__row">
+                        <dt class="contact-form__label"><label for="your-post">郵便番号<span
+                                    class="require-label">*</span></label></dt>
+                        <dd class="contact-form__input"><input id="your-post" type="text" placeholder="000-0000" name="your-post"></dd>
+                    </div>
+                    <div class="contact-form__row">
+                        <dt class="contact-form__label"><label for="your-prefecture">都道府県<span
+                                    class="require-label">*</span></label></dt>
+                        <dd class="contact-form__input contact-form__inputSelect">
+                            <select class="contact-form__select" size="1" name="prefecture" required>
+                                <option class="contact-form__option" value="">選択</option>
+                                <option class="contact-form__option" value="岡山県">岡山県</option>
+                                <option class="contact-form__option" value="岡山県外">岡山県以外</option>
+                            </select>
+                        </dd>
+                    </div>
+                    <div class="contact-form__row">
+                        <dt class="contact-form__label"><label for="your-adress">ご住所<span
+                                    class="require-label">*</span></label></dt>
+                        <dd class="contact-form__input"><input id="your-address" type="text" placeholder="岡山市北区国体町4-40"
+                                name="your-address"></dd>
+                    </div>
+                    <div class="contact-form__row">
+                        <dt class="contact-form__label"><label for="your-number">電話番号<span
+                                    class="require-label">*</span></label></dt>
+                        <dd class="contact-form__input"><input id="your-number" type="text" placeholder="000-0000-000"
+                                name="your-number"></dd>
+                    </div>
+                    <div class="contact-form__row">
+                        <dt class="contact-form__label"><label for="your-email">メールアドレス<span
+                                    class="require-label">*</span></label></dt>
+                        <dd class="contact-form__input"><input id="your-email" type="email"
+                                placeholder="xxx@example.com" name="your-email"></dd>
+                    </div>
+                    <!-- <div class="contact-form__row">
+                        <dt class="contact-form__label"><label for="your-message">お問い合わせ内容<span
+                                    class="require-label"></span></label></dt>
+                        <dd class="contact-form__input">
+                            <textarea name="" id="your-message" placeholder="ご自由にご記入ください"></textarea>
+                        </dd>
+                    </div>  -->
+                </dl>
+                <div class="contact-form__submit">
+                    <input type="submit" value="送信する">
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- /.section contact -->
+
+
+    <footer class="footer">
+        <ul class="footer-ul">
+            <li class="footer__list"><a href="#" class="footer__listItem"><span class="footer__listItem--span">feature</span></a></li>
+            <li class="footer__list"><a href="#" class="footer__listItem"><span class="footer__listItem--span">gallery</span></a></li>
+            <li class="footer__list"><a href="#" class="footer__listItem"><span class="footer__listItem--span">staff</span></a></li>
+            <li class="footer__list"><a href="#" class="footer__listItem"><span class="footer__listItem--span">flow</span></a></li>
+            <li class="footer__list"><a href="#" class="footer__listItem"><span class="footer__listItem--span">contact</span></a></li>
+        </ul>
+        <a href="#" class="footer__logo"><img src="./images/footer_logo.png" alt="ロゴ" class="footer__logoImg"></a>
+        <p class="footer__copyright">Copyright © HAND in hand. All Rights Reserved.</p>
+    </footer>
+
+    <!-- jQueryライブラリ読み込みコード -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <script src="./js/jquery-3.6.3.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

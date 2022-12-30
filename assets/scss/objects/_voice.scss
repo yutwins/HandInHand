@@ -1,0 +1,118 @@
+@use "../foundation/global" as *;
+
+.voice {
+
+    &-inner {
+        max-width: 95%;
+
+        @include mq("sp") {
+            max-width: calc(100% - 40px);
+        }
+    }
+
+    &-titleArea {
+
+    }
+
+    &__title {
+
+        &--en {
+
+        }
+    }
+
+    &-items {
+        margin-top: 64px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12.5%;
+
+        @include mq("tab") {
+            margin-top: 48px;
+        }
+
+        @include mq("sp") {
+            display: block;
+            margin-top: 32px;
+        }
+    }
+
+    &__item {
+        display: block;
+        width: 30%;
+        min-width: 350px;
+
+        @include mq("sp") {
+            min-width: 0;
+            width: 100%;
+
+            &:not(:first-child) {
+                margin-top: 32px;
+            }
+        }
+    } 
+
+    &__itemImg {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+
+        @include mq("tab") {
+            height: 250px;
+        }
+        @include mq("sp") {
+           height: auto; 
+        }
+    }
+
+    &__itemName {
+        font-weight: bold;
+        font-size: 18px;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+    }
+
+    &__itemPlaces {
+        width: 180px;
+        margin: 10px auto 0;
+    }
+
+    &__itemDl {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        font-size: 12px;
+    }
+
+    &__itemDt {
+
+    }
+
+    &__itemDd {
+
+    }
+
+    &__itemText {
+        margin-top: 15px;
+        font-size: 14px;
+        font-weight: 500;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+
+    &__btn {
+        justify-content: center;
+        margin-top: 64px;
+
+        @include mq("tab") {
+            margin-top: 48px;
+        }
+        @include mq("sp") {
+            margin-top: 24px;
+        }
+
+        &--text {
+            color: $theme03_color;
+        }
+    }
+}

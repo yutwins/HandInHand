@@ -1,0 +1,104 @@
+@use "../foundation/global" as *;
+
+.access {
+
+
+    &-inner {
+        width: 900px;
+        max-width: calc(100% - 80px);
+        margin: 0 auto;
+    }
+
+    &-dl {
+        height: auto;
+        margin-top: 32px;
+    }
+
+    &-row {
+        display: flex;
+        padding-bottom: 10px;
+        font-size: 18px;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 500;
+        border-bottom: 1px solid $gray_color02;
+
+        @include mq("tab") {
+            font-size: 16px;
+            padding-bottom: 8px;
+        }
+        @include mq("sp") {
+            font-size: 14px;
+            padding-bottom: 6px;
+        }
+
+        &:not(:first-child) {
+            margin-top: 12px;
+            
+            @include mq("sp") {
+                margin-top: 8px;
+            }
+        }
+    }
+
+    &__dt {
+        width: 30%;
+        color: $gray_color01;
+    }
+    
+    &-ddArea {
+        width: 70%;
+    }
+    &__dd {
+        width: 100%;
+    }
+
+
+    &-container {
+        margin-top: 32px;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+
+        @include mq("sp") {
+            margin-top: 24px;
+            gap: 10px;
+        }
+    }
+
+    &-containerLeft {
+        width: 62%;
+    }
+    &-containerRight {
+        width: 38%;
+    }
+
+    &__map {
+        width: 100%;
+        height: 315px;
+
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &-imageArea {
+        margin-top: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2%;
+
+        @include mq("sp") {
+            margin-top: 16px;
+        }
+    }
+
+    &__img {
+        height: 100%;
+        object-fit: cover;
+
+        &--small {
+            width: 49%;
+        }
+    }
+}
